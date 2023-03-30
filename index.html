@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Palette Generator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- JS -->
+    <script src="index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="maincontainer">
+      <div id="hero-wrapper">
+        <input id="color-picker" type="color" />
+
+        <select name="mode" id="mode-select">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-Complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+
+        <button id="scheme-btn">Get color scheme</button>
+      </div>
+
+      <div id="color-container">
+        <div class="color-block">
+          <button id="color-0" class="color-rectangle"></button>
+          <div id="color-code-0" class="color-code">
+            <h4>#000000</h4>
+          </div>
+        </div>
+
+        <div class="color-block">
+          <button id="color-1" class="color-rectangle"></button>
+          <div id="color-code-1" class="color-code">
+            <h4>#FFFFFF</h4>
+          </div>
+        </div>
+
+        <div class="color-block">
+          <button id="color-2" class="color-rectangle"></button>
+          <div id="color-code-2" class="color-code">
+            <h4>#000000</h4>
+          </div>
+        </div>
+
+        <div class="color-block">
+          <button id="color-3" class="color-rectangle"></button>
+          <div id="color-code-3" class="color-code">
+            <h4>#FFFFFF</h4>
+          </div>
+        </div>
+
+        <div class="color-block">
+          <button id="color-4" class="color-rectangle"></button>
+          <div id="color-code-4" class="color-code">
+            <h4>#000000</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
